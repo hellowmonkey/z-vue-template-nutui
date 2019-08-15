@@ -1,6 +1,6 @@
 .fade-enter-active,
 .fade-leave-active {
-    transition: all @animate-time;
+    transition: all $animate-time;
 }
 
 .fade-enter,
@@ -11,7 +11,7 @@
 
 .slider-left-enter-active,
 .slider-left-leave-active {
-    transition: transform @animate-time;
+    transition: transform $animate-time;
 }
 
 .slider-left-enter {
@@ -24,7 +24,7 @@
 
 .slider-right-enter-active,
 .slider-right-leave-active {
-    transition: transform @animate-time;
+    transition: transform $animate-time;
 }
 
 .slider-right-enter {
@@ -37,7 +37,7 @@
 
 .slider-bottom-enter-active,
 .slider-bottom-leave-active {
-    transition: all @animate-time;
+    transition: all $animate-time;
 }
 
 .slider-bottom-enter {
@@ -52,7 +52,7 @@
 
 .slider-top-enter-active,
 .slider-top-leave-active {
-    transition: all @animate-time;
+    transition: all $animate-time;
 }
 
 .slider-top-enter {

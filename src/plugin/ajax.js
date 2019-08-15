@@ -5,6 +5,8 @@ import { isEmpty } from '../util'
 import store from '../store'
 import router from '../router'
 
+let id = 1
+
 // request拦截器
 flyio.interceptors.request.use((conf) => {
     conf.baseURL = config.baseURL
@@ -38,7 +40,7 @@ flyio.interceptors.response.use((response) => {
     if (code !== 200) {
         err.message = data.message || `${code}`
         console.error(err)
-        alert(`操作失败: ${err.message}`)
+        Vue.prototype.$toast.fail(`操作失败: ${err.message}`)
         if (code === config.errorLogin) {
             return router.replace({ name: 'login' })
         }
@@ -68,7 +70,13 @@ flyio.interceptors.response.use((response) => {
             err.message = messages[err.status]
         }
     }
-    alert(err.message)
+    Vue.prototype.$dialog({
+        id: 'ajax-' + (++id),
+        title: '请求失败',
+        content: err.message,
+        noOkBtn: true,
+        cancelBtnTxt: '关闭'
+    })
     return Promise.reject(error)
 })
 

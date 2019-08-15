@@ -10,15 +10,18 @@
     "test:unit": "vue-cli-service test:unit"
   },
   "dependencies": {
+    "@nutui/nutui": "^2.1.5",
     "core-js": "^2.6.5",
     "dayjs": "^1.8.15",
     "flyio": "^0.6.14",
     "nprogress": "^0.2.0",
+    "vconsole": "^3.3.2",
     "vue": "^2.6.10",
     "vue-router": "^3.0.3",
     "vuex": "^3.0.1"
   },
   "devDependencies": {
+    "@nutui/babel-plugin-separate-import": "^1.2.0",
     "@vue/cli-plugin-babel": "^3.10.0",
     "@vue/cli-plugin-eslint": "^3.10.0",
     "@vue/cli-plugin-unit-jest": "^3.10.0",
@@ -30,8 +33,8 @@
     "babel-jest": "^23.6.0",
     "eslint": "^5.16.0",
     "eslint-plugin-vue": "^5.0.0",
-    "less": "^3.0.4",
-    "less-loader": "^4.1.0",
+    "node-sass": "^4.12.0",
+    "sass-loader": "^7.2.0",
     "vue-template-compiler": "^2.6.10"
   }
 }

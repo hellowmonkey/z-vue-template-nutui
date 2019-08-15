@@ -1,6 +1,6 @@
 <template>
     <div>
-        Hi
+        <nut-button>Hi</nut-button>
     </div>
 </template>
 

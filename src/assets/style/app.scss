@@ -1,6 +1,6 @@
-@import './var.less';
-@import './animate.less';
-@import './reset.less';
+@import './var.scss';
+@import './animate.scss';
+@import './reset.scss';
 
 // 文本
 .text-elip {
@@ -55,15 +55,15 @@
 
 // 字体
 .font-lg {
-    font-size: @font-size-large;
+    font-size: $font-size-large;
 }
 
 .font-xlg {
-    font-size: @font-size-large + 2;
+    font-size: $font-size-large + 2;
 }
 
 .font-sm {
-    font-size: @font-size-small;
+    font-size: $font-size-small;
 }
 
 .font-italic {
@@ -71,23 +71,23 @@
 }
 
 .font-red {
-    color: @color-red;
+    color: $color-red;
 }
 
 .font-blue {
-    color: @color-blue;
+    color: $color-blue;
 }
 
 .font-green {
-    color: @color-green;
+    color: $color-green;
 }
 
 .font-yellow {
-    color: @color-yellow;
+    color: $color-yellow;
 }
 
 .font-gray {
-    color: @text-color;
+    color: $text-color;
 }
 
 .font-light {
@@ -99,27 +99,27 @@
 // 背景
 .bg-red {
     color: #fff;
-    background-color: @color-red;
+    background-color: $color-red;
 }
 
 .bg-blue {
     color: #fff;
-    background-color: @color-blue;
+    background-color: $color-blue;
 }
 
 .bg-green {
     color: #fff;
-    background-color: @color-green;
+    background-color: $color-green;
 }
 
 .bg-yellow {
     color: #fff;
-    background-color: @color-yellow;
+    background-color: $color-yellow;
 }
 
 .bg-gray {
     color: #fff;
-    background-color: @text-color;
+    background-color: $text-color;
 }
 
 .bg-light {
@@ -395,39 +395,39 @@
 // 按钮颜色配置
 .nut-button {
     &.btn-green {
-        background: linear-gradient(315deg, @color-green 0%, darken(@color-green, 10%), 100%);
+        background: linear-gradient(315deg, $color-green 0%, darken($color-green, 10%), 100%);
         color: #fff;
     }
     &.btn-yellow {
-        background: linear-gradient(315deg, @color-yellow 0%, darken(@color-yellow, 10%), 100%);
+        background: linear-gradient(315deg, $color-yellow 0%, darken($color-yellow, 10%), 100%);
         color: #fff;
     }
     &.btn-orange {
-        background: linear-gradient(315deg, @color-orange 0%, darken(@color-orange, 10%), 100%);
+        background: linear-gradient(315deg, $color-orange 0%, darken($color-orange, 10%), 100%);
         color: #fff;
     }
     &.btn-red {
-        background: linear-gradient(315deg, @color-red 0%, darken(@color-red, 10%), 100%);
+        background: linear-gradient(315deg, $color-red 0%, darken($color-red, 10%), 100%);
         color: #fff;
     }
     &.btn-pink {
-        background: linear-gradient(315deg, @color-pink 0%, darken(@color-pink, 10%), 100%);
+        background: linear-gradient(315deg, $color-pink 0%, darken($color-pink, 10%), 100%);
         color: #fff;
     }
     &.btn-blue {
-        background: linear-gradient(315deg, @color-blue 0%, darken(@color-blue, 10%), 100%);
+        background: linear-gradient(315deg, $color-blue 0%, darken($color-blue, 10%), 100%);
         color: #fff;
     }
     &.btn-purple {
-        background: linear-gradient(315deg, @color-purple 0%, darken(@color-purple, 10%), 100%);
+        background: linear-gradient(315deg, $color-purple 0%, darken($color-purple, 10%), 100%);
         color: #fff;
     }
     &.btn-cyan {
-        background: linear-gradient(315deg, @color-cyan 0%, darken(@color-cyan, 10%), 100%);
+        background: linear-gradient(315deg, $color-cyan 0%, darken($color-cyan, 10%), 100%);
         color: #fff;
     }
     &.btn-orange {
-        background: linear-gradient(315deg, @color-orange 0%, darken(@color-orange, 10%), 100%);
+        background: linear-gradient(315deg, $color-orange 0%, darken($color-orange, 10%), 100%);
         color: #fff;
     }
 }
