@@ -1,0 +1,437 @@
+@import './var.less';
+@import './animate.less';
+@import './reset.less';
+
+// 文本
+.text-elip {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-justify {
+    text-align: justify;
+    text-justify: distribute-all-lines;
+    text-align-last: justify;
+    -moz-text-align-last: justify;
+    -webkit-text-align-last: justify;
+}
+
+.text-underline {
+    text-decoration: underline;
+}
+
+.text-through {
+    text-decoration: line-through;
+}
+
+.text-indent {
+    text-indent: 2em;
+}
+
+.text-nowrap {
+    white-space: nowrap;
+}
+
+.text-lowercase {
+    text-transform: lowercase;
+}
+
+.text-uppercase {
+    text-transform: uppercase;
+}
+
+// 字体
+.font-lg {
+    font-size: @font-size-large;
+}
+
+.font-xlg {
+    font-size: @font-size-large + 2;
+}
+
+.font-sm {
+    font-size: @font-size-small;
+}
+
+.font-italic {
+    font-style: italic;
+}
+
+.font-red {
+    color: @color-red;
+}
+
+.font-blue {
+    color: @color-blue;
+}
+
+.font-green {
+    color: @color-green;
+}
+
+.font-yellow {
+    color: @color-yellow;
+}
+
+.font-gray {
+    color: @text-color;
+}
+
+.font-light {
+    color: #fff;
+}
+
+
+
+// 背景
+.bg-red {
+    color: #fff;
+    background-color: @color-red;
+}
+
+.bg-blue {
+    color: #fff;
+    background-color: @color-blue;
+}
+
+.bg-green {
+    color: #fff;
+    background-color: @color-green;
+}
+
+.bg-yellow {
+    color: #fff;
+    background-color: @color-yellow;
+}
+
+.bg-gray {
+    color: #fff;
+    background-color: @text-color;
+}
+
+.bg-light {
+    background-color: #fff;
+}
+
+.bg-cover,
+.bg-contain {
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.bg-cover {
+    background-size: cover;
+}
+
+.bg-contain {
+    background-size: contain;
+}
+
+// 基础
+.pull-left {
+    float: left;
+}
+
+.pull-right {
+    float: right;
+}
+
+.pos-rel {
+    position: relative;
+}
+
+.pos-abs {
+    position: absolute;
+}
+
+.overflow {
+    overflow: hidden;
+}
+
+.circle {
+    border-radius: 50%;
+}
+
+.mar-t-5 {
+    margin-top: 5px !important;
+}
+
+.mar-t-10 {
+    margin-top: 10px !important;
+}
+
+.mar-t-15 {
+    margin-top: 15px !important;
+}
+
+.mar-t-20 {
+    margin-top: 20px !important;
+}
+
+.mar-b-5 {
+    margin-bottom: 5px !important;
+}
+
+.mar-b-10 {
+    margin-bottom: 10px !important;
+}
+
+.mar-b-15 {
+    margin-bottom: 15px !important;
+}
+
+.mar-b-20 {
+    margin-bottom: 20px !important;
+}
+
+.mar-l-5 {
+    margin-left: 5px !important;
+}
+
+.mar-l-10 {
+    margin-left: 10px !important;
+}
+
+.mar-l-15 {
+    margin-left: 15px !important;
+}
+
+.mar-l-20 {
+    margin-left: 20px !important;
+}
+
+.mar-r-5 {
+    margin-right: 5px !important;
+}
+
+.mar-r-10 {
+    margin-right: 10px !important;
+}
+
+.mar-r-15 {
+    margin-right: 15px !important;
+}
+
+.mar-r-20 {
+    margin-right: 20px !important;
+}
+
+.mar-5 {
+    margin: 5px !important;
+}
+
+.mar-10 {
+    margin: 10px !important;
+}
+
+.mar-15 {
+    margin: 15px !important;
+}
+
+.mar-20 {
+    margin: 20px !important;
+}
+
+.pad-t-5 {
+    padding-top: 5px !important;
+}
+
+.pad-t-10 {
+    padding-top: 10px !important;
+}
+
+.pad-t-15 {
+    padding-top: 15px !important;
+}
+
+.pad-t-20 {
+    padding-top: 20px !important;
+}
+
+.pad-b-5 {
+    padding-bottom: 5px !important;
+}
+
+.pad-b-10 {
+    padding-bottom: 10px !important;
+}
+
+.pad-b-15 {
+    padding-bottom: 15px !important;
+}
+
+.pad-b-20 {
+    padding-bottom: 20px !important;
+}
+
+.pad-l-5 {
+    padding-left: 5px !important;
+}
+
+.pad-l-10 {
+    padding-left: 10px !important;
+}
+
+.pad-l-15 {
+    padding-left: 15px !important;
+}
+
+.pad-l-20 {
+    padding-left: 20px !important;
+}
+
+.pad-r-5 {
+    padding-right: 5px !important;
+}
+
+.pad-r-10 {
+    padding-right: 10px !important;
+}
+
+.pad-r-15 {
+    padding-right: 15px !important;
+}
+
+.pad-r-20 {
+    padding-right: 20px !important;
+}
+
+.pad-5 {
+    padding: 5px !important;
+}
+
+.pad-10 {
+    padding: 10px !important;
+}
+
+.pad-15 {
+    padding: 15px !important;
+}
+
+.pad-20 {
+    padding: 20px !important;
+}
+
+.border-top {
+    border-top: 1px solid #eee;
+}
+
+.border-bottom {
+    border-bottom: 1px solid #eee;
+}
+
+.clearfix:after {
+    content: '';
+    display: table;
+    clear: both;
+    height: 0;
+}
+
+.flex {
+	display: flex;
+
+	&.align-center {
+		align-items: center;
+	}
+
+	&.align-start {
+		align-items: flex-start;
+	}
+
+	&.align-end {
+		align-items: flex-end;
+	}
+
+	&.justify-center {
+		justify-content: center;
+	}
+
+	&.justify-start {
+		justify-content: flex-start;
+	}
+
+	&.justify-end {
+		justify-content: flex-end;
+	}
+
+	&.justify-between {
+		justify-content: space-between;
+	}
+
+	&.wrap-nowrap {
+		flex-wrap: nowrap;
+	}
+
+	&.wrap {
+		flex-wrap: wrap;
+	}
+
+	&.direction-row {
+		flex-direction: row;
+	}
+
+	&.direction-column {
+		flex-direction: column;
+	}
+}
+
+.full {
+    height: 100% !important;
+}
+
+// 按钮颜色配置
+.nut-button {
+    &.btn-green {
+        background: linear-gradient(315deg, @color-green 0%, darken(@color-green, 10%), 100%);
+        color: #fff;
+    }
+    &.btn-yellow {
+        background: linear-gradient(315deg, @color-yellow 0%, darken(@color-yellow, 10%), 100%);
+        color: #fff;
+    }
+    &.btn-orange {
+        background: linear-gradient(315deg, @color-orange 0%, darken(@color-orange, 10%), 100%);
+        color: #fff;
+    }
+    &.btn-red {
+        background: linear-gradient(315deg, @color-red 0%, darken(@color-red, 10%), 100%);
+        color: #fff;
+    }
+    &.btn-pink {
+        background: linear-gradient(315deg, @color-pink 0%, darken(@color-pink, 10%), 100%);
+        color: #fff;
+    }
+    &.btn-blue {
+        background: linear-gradient(315deg, @color-blue 0%, darken(@color-blue, 10%), 100%);
+        color: #fff;
+    }
+    &.btn-purple {
+        background: linear-gradient(315deg, @color-purple 0%, darken(@color-purple, 10%), 100%);
+        color: #fff;
+    }
+    &.btn-cyan {
+        background: linear-gradient(315deg, @color-cyan 0%, darken(@color-cyan, 10%), 100%);
+        color: #fff;
+    }
+    &.btn-orange {
+        background: linear-gradient(315deg, @color-orange 0%, darken(@color-orange, 10%), 100%);
+        color: #fff;
+    }
+}
+
+.blur {
+    filter: blur(3px);
+}
